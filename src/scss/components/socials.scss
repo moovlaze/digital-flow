@@ -1,0 +1,13 @@
+.socials {
+	display: flex;
+	gap: 10px;
+	&__item {
+		width: 30px;
+		height: 30px;
+		transition: all 0.3s ease;
+		&:hover,
+		&:focus {
+			transform: translateY(-5px);
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.menu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 40px 80px;
+	overflow-y: auto;
+	background-color: $color-shark;
+	transform: translateX(100%);
+	transition: all 0.2s ease;
+	&_active {
+		transform: translateX(50%);
+		@media (max-width: 767.98px) {
+			transform: translateX(20%);
+		}
+		@media (max-width: 575.98px) {
+			padding: 20px;
+			transform: translateX(0);
+		}
+	}
+	&__close {
+		margin-bottom: 90px;
+		cursor: pointer;
+	}
+
+	&__nav {
+		margin-bottom: 130px;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		padding-bottom: 10px;
+		font-size: 18px;
+		line-height: 22px;
+		color: rgba(255, 255, 255, 0.3);
+		transition: all 0.2s ease;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 1px;
+			background-color: $color-white;
+			transition: all 0.2s ease;
+		}
+		&:hover {
+			color: $color-white;
+			&::after {
+				width: 70%;
+			}
+		}
+	}
+
+	&__btn {
+		max-width: 280px;
+		width: 100%;
+		margin-bottom: 130px;
+	}
+}

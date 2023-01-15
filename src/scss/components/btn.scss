@@ -1,0 +1,33 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 30px;
+	font-family: inherit;
+	font-weight: inherit;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	&_gradient {
+		color: $color-white;
+		background: linear-gradient(90deg, #074d88 0%, #61b3c9 100%);
+		svg {
+			path {
+				fill: $color-white;
+			}
+		}
+	}
+	&_border {
+		border: 1px solid $color-dark;
+		color: $color-dark;
+		background-color: transparent;
+		svg {
+			path {
+				fill: $color-dark;
+			}
+		}
+	}
+	&:hover,
+	&:focus {
+		transform: translateY(-5px);
+	}
+}
