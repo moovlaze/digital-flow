@@ -1,0 +1,15 @@
+.title {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.2;
+	&_black {
+		color: $color-dark;
+	}
+	&_white {
+		color: $color-white;
+	}
+	@media (max-width: 424.98px) {
+		font-size: 34px;
+		margin-bottom: 30px;
+	}
+}

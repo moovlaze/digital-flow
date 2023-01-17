@@ -1,0 +1,37 @@
+.info-about {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: max(15px, calc((100% - 1245px + 15px) / 2));
+	background-color: #f1f1f1;
+	@media (max-width: 1199.98px) {
+		justify-content: center;
+		padding: 20px 15px;
+	}
+
+	&__block {
+		max-width: 500px;
+		text-align: right;
+		@media (max-width: 1199.98px) {
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-bottom: 60px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 150%;
+		color: $color-scorpion;
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+		@media (max-width: 424.98px) {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
