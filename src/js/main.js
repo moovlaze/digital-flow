@@ -1,7 +1,5 @@
-import * as functions from "./modules/functions.js";
 import Swiper, { Navigation, Pagination } from "swiper";
-
-functions.burger();
+import * as functions from "./modules/functions.js";
 
 const swiper = new Swiper(".about__container", {
 	modules: [Navigation, Pagination],
@@ -16,3 +14,6 @@ const swiper = new Swiper(".about__container", {
 		},
 	},
 });
+
+functions.burger();
+functions.srollHeader();

@@ -2,8 +2,13 @@
 	position: fixed;
 	left: 0;
 	top: 0;
+	z-index: 100;
 	width: 100%;
 	padding: 25px 0;
+	transition: all 0.2s ease;
+	&_active {
+		background-color: #fff;
+	}
 	&__container {
 		display: flex;
 		justify-content: space-between;
