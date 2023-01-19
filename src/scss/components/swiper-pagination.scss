@@ -17,8 +17,19 @@
 	.swiper-pagination-bullet {
 	width: 15px;
 	height: 15px;
+	margin: 0;
 	opacity: 1;
 	background-color: #313035;
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	@media (max-width: 1199.98px) {
+		&:not(:last-child) {
+			margin-bottom: 0;
+			margin-right: 10px;
+		}
+	}
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets

@@ -1,0 +1,41 @@
+.portfolio {
+	position: relative;
+	padding-top: 90px;
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 70px;
+		text-align: center;
+	}
+
+	&__wrapper {
+		position: static;
+	}
+
+	&__slider {
+		max-height: 764px;
+	}
+
+	&__item {
+		position: relative;
+		max-height: 764px;
+	}
+
+	&__btn {
+		position: absolute;
+		right: 67px;
+		top: 210px;
+		max-width: 229px;
+		width: 100%;
+		padding: 17px 30px;
+		@media (max-width: 1199.98px) {
+			position: static;
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 1199.98px) {
+		padding-bottom: 60px;
+	}
+}
