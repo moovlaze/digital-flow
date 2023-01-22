@@ -1,0 +1,27 @@
+.benefits {
+	padding: 20px 0;
+	background: url(../../img/benefits/benefits-bg.jpg) center/cover no-repeat;
+	min-height: 900px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 900px;
+	}
+
+	&__title {
+		margin-bottom: 90px;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 60px 20px;
+		@media (max-width: 991.98px) {
+			grid-template-columns: 1fr;
+		}
+		@media (max-width: 575.98px) {
+			gap: 40px 20px;
+		}
+	}
+}

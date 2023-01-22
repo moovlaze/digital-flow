@@ -8,9 +8,6 @@
 		text-align: center;
 	}
 
-	&__wrapper {
-	}
-
 	&__row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
@@ -28,12 +25,7 @@
 			}
 			&:last-child {
 				grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
-				// justify-content: stretch;
 			}
 		}
-	}
-
-	&__item {
-		// flex: 1 0 244px;
 	}
 }

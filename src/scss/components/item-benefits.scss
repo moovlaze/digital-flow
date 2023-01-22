@@ -1,0 +1,14 @@
+.item-benefits {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	&__pic {
+		flex: 0 0 50px;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		max-width: 430px;
+		color: $color-shark;
+	}
+}
