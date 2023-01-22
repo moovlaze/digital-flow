@@ -26,6 +26,16 @@
 			}
 		}
 	}
+	&_border-white {
+		border: 1px solid $color-white;
+		color: $color-white;
+		background-color: transparent;
+		svg {
+			path {
+				fill: $color-white;
+			}
+		}
+	}
 	&:hover,
 	&:focus {
 		transform: translateY(-5px);
