@@ -17,6 +17,9 @@ body {
 
 body {
 	overflow-x: hidden;
+	&_lock {
+		overflow-y: hidden;
+	}
 }
 
 h1,
@@ -58,9 +61,6 @@ li {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 150%;
-	&_lock {
-		overflow-y: hidden;
-	}
 }
 .main {
 	flex-grow: 1;
