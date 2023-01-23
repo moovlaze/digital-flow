@@ -30,3 +30,4 @@ const swiper2 = new Swiper(".portfolio__wrapper", {
 
 functions.burger();
 functions.srollHeader();
+functions.scrollToSection();
